@@ -50,18 +50,22 @@ ul('hello new day');
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
 function ul2(text, counter) {
+    document.write(`<ul>`)
     for (let i = 0; i < counter; i++) {
-        document.write(`<ul><li>${text}</li></ul>`)
+        document.write(`<li>${text}</li>`)
     }
+    document.write(`</ul>`)
 }
 ul2('cat', 5);
 
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 function arrNew(arr) {
+    document.write(`<ul>`)
     for (let arrElement of arr) {
-        document.write(`<ul><li>${arrElement}</li></ul>`)
+        document.write(`<li>${arrElement}</li>`)
     }
+    document.write(`</ul>`)
 }
 arrNew([5,9,'car', true])
 

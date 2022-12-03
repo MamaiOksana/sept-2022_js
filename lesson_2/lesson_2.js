@@ -43,8 +43,8 @@ let book_4= {
     title: 'Маруся Чурай',
     pageCount: 250,
     genre: 'Історичний роман',
-    authors: {name:'Ліна Костенко',
-              age: 93}
+    authors: [{name:'Ліна Костенко',
+              age: 93}]
 }
 console.log(book_4);
 
@@ -52,8 +52,8 @@ let book_5= {
     title: 'Триста поезій',
     pageCount: 350,
     genre: 'Збірка поезій',
-    authors: {name:'Ліна Костенко',
-              age: 93}
+    authors: [{name:'Ліна Костенко',
+              age: 93}]
 }
 console.log(book_5);
 
@@ -61,8 +61,8 @@ let book_6= {
     title: 'Кобзар',
     pageCount: 300,
     genre: 'Збірка поезій',
-    authors: {name:'Тарас Шевченко',
-              age: 'помер у віці 47р'}
+    authors: [{name:'Тарас Шевченко',
+              age: 'помер у віці 47р'}]
 }
 console.log(book_6);
 
