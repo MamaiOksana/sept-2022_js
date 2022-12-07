@@ -270,19 +270,19 @@ function Cinderella (name, age, sizeLegs) {
 // console.log(cinderellaArray);
 
 
-let Cinderella1 = new Cinderella('Марія', 25, 39);
-let Cinderella2 = new Cinderella('Оля', 27, 36);
-let Cinderella3 =  new Cinderella('Женя', 24, 38);
-let Cinderella4 =  new Cinderella('Олена', 20, 35);
-let Cinderella5 =  new Cinderella('Ніна', 21, 37);
-let Cinderella6 = new Cinderella('Діана', 29, 39);
-let Cinderella7 =  new Cinderella('Зоряна', 28, 38);
-let Cinderella8 =  new Cinderella('Оксана', 27, 36);
-let Cinderella9 =  new Cinderella('Маргарита', 26, 37);
-let Cinderella10 =  new Cinderella('Марго', 18, 39);
+let cinderella1 = new Cinderella('Марія', 25, 39);
+let cinderella2 = new Cinderella('Оля', 27, 36);
+let cinderella3 =  new Cinderella('Женя', 24, 38);
+let cinderella4 =  new Cinderella('Олена', 20, 35);
+let cinderella5 =  new Cinderella('Ніна', 21, 37);
+let cinderella6 = new Cinderella('Діана', 29, 39);
+let cinderella7 =  new Cinderella('Зоряна', 28, 38);
+let cinderella8 =  new Cinderella('Оксана', 27, 36);
+let cinderella9 =  new Cinderella('Маргарита', 26, 37);
+let cinderella10 =  new Cinderella('Марго', 18, 39);
 
 let cinderellaArray = [];
-cinderellaArray.push(Cinderella1,Cinderella2,Cinderella3,Cinderella4,Cinderella5,Cinderella6,Cinderella7,Cinderella8,Cinderella9,Cinderella10);
+cinderellaArray.push(cinderella1,cinderella2,cinderella3,cinderella4,cinderella5,cinderella6,cinderella7,cinderella8,cinderella9,cinderella10);
 console.log(cinderellaArray);
 
 
