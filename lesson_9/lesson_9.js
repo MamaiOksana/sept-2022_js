@@ -5,7 +5,7 @@ let simpsons = [
         surname: 'Simpson',
         age: 10,
         info: 'Бартолом\'ю ДжоДжо «Барт» Сімпсон (англ. Bartholomew JoJo «Bart» Simpson) — один із головних героїв мультиплікаційного серіалу Сімпсони. Барт — найстарша дитина Гомера і Мардж Сімпсон. У нього також є дві молодші сестри — Ліса і Меґґі. Барт є втіленням образу бешкетника та посереднього учня у школі. Разом зі своїм батьком Барт є одним із найвідоміших персонажів у цьому серіалі.',
-        photo: 'https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png'
+        img : 'https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png'
     },
     {
         name: 'Homer',
@@ -42,10 +42,11 @@ let simpsons = [
 //
 for (let simpson of simpsons) {
     let div = document.createElement('div');
+    let img = document.createElement('img');
     div.classList.add('member');
-    div.innerText = `name - ${simpson.name}; surname - ${simpson.surname}; age - ${simpson.age}; info - ${simpson.info};
-    photo - ${simpson.photo}`
-    document.body.append(div);
+    img.src = simpson.photo
+    div.innerText = `name - ${simpson.name}; surname - ${simpson.surname}; age - ${simpson.age}; info - ${simpson.info}`;
+    document.body.append(div, img);
 }
 
 
