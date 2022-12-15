@@ -19,15 +19,22 @@
   fetch(apiURL + id)
       .then(value => value.json())
       .then(value => {
-          for (let i = 0; i < value.length; i++) {
-              let user = value[i];
               let div = document.createElement('div');
               let h2 = document.createElement('h2');
-              h2.innerText = `${user.id} -- ${user.name} ${user.username}`;
-              div.append(h2);
-              console.log(h2);
+              h2.innerText = `${value.id} -- ${value.name} ${value.username}`;
+              let div2 = document.createElement('div');
+              div2.innerText = `${value.email}`
+          let div3 = document.createElement('div');
+              div3.innerText = ` address: street - ${value.address.street}, suite ${value.address.suite}, ${value.address.city} -- ${value.address.zipcode} zipcode,  geo - ${value.address.geo.lat},  ${value.address.geo.lng}`;
+          let div4 = document.createElement('div');
+          div4.innerText = `phone - ${value.phone}`;
+          let div5 = document.createElement('div');
+          div5.innerText = `website - ${value.website}`;
+          let div6 = document.createElement('div');
+          div6.innerText = `company - ${value.company.name}, catchPhrase- ${value.company.catchPhrase}, bs - ${value.company.bs}`;
+          div.append(h2,div2,div3,div4,div5,div6);
               document.body.append(div);
-          }
+
       })
 
 
