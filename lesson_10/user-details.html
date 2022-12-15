@@ -16,16 +16,16 @@
   console.log(id);
   // let name = url.searchParams.get("name");
   // console.log(name);
-  fetch(apiURL + id) //+ name
+  fetch(apiURL + id)
       .then(value => value.json())
-      .then(users => {
-          for (let user of users) {
+      .then(value => {
+          for (let i = 0; i < value.length; i++) {
+              let user = value[i];
               let div = document.createElement('div');
               let h2 = document.createElement('h2');
-              h2.innerText = `${user.id} -- ${user.name} ${user.username}`
-
-
+              h2.innerText = `${user.id} -- ${user.name} ${user.username}`;
               div.append(h2);
+              console.log(h2);
               document.body.append(div);
           }
       })
