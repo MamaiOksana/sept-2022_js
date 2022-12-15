@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>User info</h1>
+<script>
+
+   let apiURL = 'https://jsonplaceholder.typicode.com/users/';
+
+
+  let url = new URL (location.href);
+  let id = url.searchParams.get("id");
+  console.log(id);
+  // let name = url.searchParams.get("name");
+  // console.log(name);
+  fetch(apiURL + id) //+ name
+      .then(value => value.json())
+      .then(users => {
+          for (let user of users) {
+              let div = document.createElement('div');
+              let h2 = document.createElement('h2');
+              h2.innerText = `${user.id} -- ${user.name} ${user.username}`
+
+
+              div.append(h2);
+              document.body.append(div);
+          }
+      })
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
