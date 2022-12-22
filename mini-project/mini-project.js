@@ -36,5 +36,6 @@ fetch('https://jsonplaceholder.typicode.com/users')
         divUsers.append(divUser, info);
         document.body.appendChild(divUsers);
 
+
     }
 })
