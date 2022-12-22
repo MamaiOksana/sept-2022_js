@@ -14,8 +14,6 @@
   let url = new URL (location.href);
   let id = url.searchParams.get("id");
   console.log(id);
-  // let name = url.searchParams.get("name");
-  // console.log(name);
   fetch(apiURL + id)
       .then(value => value.json())
       .then(value => {

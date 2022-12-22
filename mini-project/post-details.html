@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Title</h1>
+<script>
+
+    //let  apiURL = 'https://jsonplaceholder.typicode.com/users/';
+
+    let  apiURL = 'https://jsonplaceholder.typicode.com/users/posts';
+
+    let url = new URL (location.href);
+   // let id = url.searchParams.get("id");
+    let id = url.searchParams.get("post");
+
+
+   // fetch(apiURL + id)
+    fetch(apiURL + post)
+        .then(value => value.json())
+        .then(value => {
+            for (let post of value) {
+                console.log(post);
+                let divPost = document.createElement('div');
+                let pInfo = document.createElement('p');
+                pInfo.innerText = ` User-id: ${post.userId}
+                                    ID: ${post.id}
+                                    Title: ${post.title}
+                                    Body: ${post.body}`
+                document.append(divPost, pInfo);
+            }
+        })
+
+   // 8 Нижчє інформаці про пост, вивести всі коментарі поточного поста (ендпоінт  - https://jsonplaceholder.typicode.com/posts/POST_ID/comments)
+
+    // let comments = document.getElementsByClassName('comments')[0];
+    // fetch(`https://jsonplaceholder.typicode.com/post/${post.id}/comments`)
+    //     .then(value => value.json())
+    //     .then(value => {
+    //         console.log(value)
+    //         for (let commentItem of value) {
+    //             let commentLi = document.createElement('li');
+    //             commentLi.innerText = commentItem.body;
+    //             comments.append(commentLi);
+    //         }
+    //     });
+
+</script>
+</body>
+</html>
