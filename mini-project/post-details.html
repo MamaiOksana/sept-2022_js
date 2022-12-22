@@ -9,44 +9,58 @@
 <script>
 
 
-    //let  apiURL = 'https://jsonplaceholder.typicode.com/users/';
 
-    let  apiURL = 'https://jsonplaceholder.typicode.com/users/posts/';
+    let  apiURL = 'https://jsonplaceholder.typicode.com/posts/';
 
     let url = new URL (location.href);
-   // let id = url.searchParams.get("id");
-    let id = url.searchParams.get("post");
+
+    let post = url.searchParams.get("post");
 
 
-   // fetch(apiURL + id)
-    fetch(apiURL + post)
+   fetch(apiURL + post)
+
         .then(value => value.json())
         .then(value => {
-            for (let post of value) {
+            for (let post in value) {
                 console.log(post);
                 let divPost = document.createElement('div');
                 let pInfo = document.createElement('p');
-                pInfo.innerText = ` User-id: ${post.userId}
-                                    ID: ${post.id}
-                                    Title: ${post.title}
-                                    Body: ${post.body}`
-                document.append(divPost, pInfo);
+                pInfo.innerText = ` User-id: ${value.userId}
+                                    ID: ${value.id}
+                                    Title: ${value.title}
+                                    Body: ${value.body}`
+                document.body.append(divPost, pInfo);
             }
         })
 
    // 8 Нижчє інформаці про пост, вивести всі коментарі поточного поста (ендпоінт  - https://jsonplaceholder.typicode.com/posts/POST_ID/comments)
 
-    // let comments = document.getElementsByClassName('comments')[0];
-    // fetch(`https://jsonplaceholder.typicode.com/post/${post.id}/comments`)
-    //     .then(value => value.json())
-    //     .then(value => {
-    //         console.log(value)
-    //         for (let commentItem of value) {
-    //             let commentLi = document.createElement('li');
-    //             commentLi.innerText = commentItem.body;
-    //             comments.append(commentLi);
-    //         }
-    //     });
+
+
+    // let btn2 = document.createElement('button');
+    // btn2.innerText = `all comments`
+    // btn2.onclick = function () {
+    //     this.disabled = true;
+
+        let  apiURL2 = 'https://jsonplaceholder.typicode.com/comments'
+        let url2 = new URL (location.href);
+
+        let comment = url2.searchParams.get("comment");
+
+    fetch(apiURL2 + comment)
+        .then(value => value.json())
+        .then(value => {
+
+            let comments = document.createElement('ul')
+            for (let comment of value) {
+
+                let commentLi = document.createElement('li');
+                commentLi.innerText = comment.body;
+                comments.append(commentLi);
+            }
+            document.body.append(comments);
+        });
+    // document.body.append(btn2);
 
 </script>
 </body>

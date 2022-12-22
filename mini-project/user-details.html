@@ -66,7 +66,7 @@
                             divPost.innerText = `${post.title}`;
                             let anchor = document.createElement('a');
                             anchor.innerText = 'details info about post';
-                            anchor.href = 'post-details.html?post=' + JSON.stringify(post);
+                            anchor.href = 'post-details.html?post=' + post.id;
                             divPost.appendChild(anchor);
                             document.body.appendChild(divPost);
                         }
