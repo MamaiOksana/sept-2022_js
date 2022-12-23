@@ -26,14 +26,18 @@ fetch('https://jsonplaceholder.typicode.com/users')
 .then((response)=>response.json())
 .then(users => {
     let divUsers = document.createElement('div');
+    divUsers.classList.add('users')
     for (let user of users) {
         console.log(user);
         let divUser = document.createElement('div');
+        divUser.classList.add('user')
         divUser.innerText = `${user.id} -- ${user.name}`;
         let info = document.createElement('a');
+        info.classList.add('info')
         info.innerText = `more info`;
         info.href = 'user-details.html?id=' + user.id;
-        divUsers.append(divUser, info);
+        divUser.appendChild(info)
+        divUsers.append(divUser);
         document.body.appendChild(divUsers);
 
 

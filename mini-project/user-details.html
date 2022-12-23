@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="page2.css">
 </head>
 <body>
 <h1> User info</h1>
@@ -54,6 +55,7 @@
 
 
             let btn = document.createElement('button');
+            btn.classList.add('buttonInfo')
             btn.innerText = `post of current user`
             btn.onclick = function () {
                  this.disabled = true;

@@ -39,11 +39,11 @@
 
 
 
-    //    let apiURL2 = 'https://jsonplaceholder.typicode.com/comments/'
-
-      //  let url2 = new URL(location.href);
-
-        //let comment = url2.searchParams.get("comment");
+       // let apiURL2 = 'https://jsonplaceholder.typicode.com/comments/'
+       //
+       // let url2 = new URL(location.href);
+       //
+       //  let comment = url2.searchParams.get("comment");
 
 
     let btn2 = document.createElement('button');
@@ -51,18 +51,18 @@
     btn2.onclick = function () {
         this.disabled = true;
 
-        fetch(apiURL +post.id +'/comments')
+        fetch(apiURL + post.id +'/comments')
             .then( value => value.json())
-            .then(comments => {
-                console.log(comments);
-                let comment = document.createElement('ul')
-                for (let comment of comments) {
+            .then(value => {
+                console.log(value);
+                let comments = document.createElement('ul')
+                for (let comment of value) {
 
                     let commentLi = document.createElement('li');
                     commentLi.innerText = comment.body;
                     comment.append(commentLi);
                 }
-                document.body.append(comment);
+                document.body.append(comments);
             });
     }
     document.body.append(btn2);
