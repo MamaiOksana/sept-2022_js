@@ -37,30 +37,35 @@
 
 
 
-    // let btn2 = document.createElement('button');
-    // btn2.innerText = `all comments`
-    // btn2.onclick = function () {
-    //     this.disabled = true;
 
-        let  apiURL2 = 'https://jsonplaceholder.typicode.com/comments'
-        let url2 = new URL (location.href);
+
+        let apiURL2 = 'https://jsonplaceholder.typicode.com/comments/'
+
+        let url2 = new URL(location.href);
 
         let comment = url2.searchParams.get("comment");
 
-    fetch(apiURL2 + comment)
-        .then(value => value.json())
-        .then(value => {
 
-            let comments = document.createElement('ul')
-            for (let comment of value) {
+    let btn2 = document.createElement('button');
+    btn2.innerText = `all comments`
+    btn2.onclick = function () {
+        this.disabled = true;
 
-                let commentLi = document.createElement('li');
-                commentLi.innerText = comment.body;
-                comments.append(commentLi);
-            }
-            document.body.append(comments);
-        });
-    // document.body.append(btn2);
+        fetch(`https://jsonplaceholder.typicode.com/post/${post.id}/comments`)
+            .then(value => value.json())
+            .then(value => {
+
+                let comments = document.createElement('ul')
+                for (let comment in value) {
+
+                    let commentLi = document.createElement('li');
+                    commentLi.innerText = comment.body;
+                    comments.append(commentLi);
+                }
+                document.body.append(comments);
+            });
+    }
+    document.body.append(btn2);
 
 </script>
 </body>
