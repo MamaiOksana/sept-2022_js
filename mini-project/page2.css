@@ -1,5 +1,35 @@
+.container {
+    background: #aeecd7;
+    border: #122d3f solid 2px;
+}
+
 .buttonInfo{
     width: 90%;
-    margin: 0 auto;
     display: block;
+    margin: 0 auto;
+}
+.forPost{
+    margin-left: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 420px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    height: 200px;
+    background: lightblue;
+    border: #122d3f solid 1px;
+}
+
+.infoPost {
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+
 }
