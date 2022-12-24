@@ -1,3 +1,5 @@
+let divBox = document.querySelector('.postBox');
+
 let  apiURL = 'https://jsonplaceholder.typicode.com/posts/';
 
 let url = new URL (location.href);
@@ -15,11 +17,15 @@ fetch(apiURL + post)
         for (let post in value) {
             let pInfo = document.createElement('p');
             pInfo.innerText = `${post} -- ${value[post]}`;
-            divPost.append(pInfo)
+            divPost.append(pInfo);
+            divBox.append(divPost)
         }
-        document.body.append(divPost);
     })
 
+
+
+
+let boxComments = document.querySelector('.boxComments');
 
 
  fetch(`https://jsonplaceholder.typicode.com/posts/${post}/comments`)
@@ -34,5 +40,7 @@ fetch(apiURL + post)
              commentLi.innerText = `${commentItem.body}`;
             commentsPost.append(commentLi);
          }
-         document.body.append(commentsPost);
+         boxComments.append(commentsPost);
 })
+
+document.body.append(boxComments);

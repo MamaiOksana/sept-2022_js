@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac129c81-4f86-4ba9-9714-efd8ff8f8f67" name="Changes" comment="add mini project">
-      <change beforePath="$PROJECT_DIR$/mini-project/mini-project.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/mini-project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/page1.css" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/page1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/page2.css" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/page2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/mini-project.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/all_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/mini-project.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/all-users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/page1.css" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/all-users-page1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/page2.css" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/user-details-page2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/page3.css" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/post-details-page3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/post-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/post-details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mini-project/post-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/post-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-project/user-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/user-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini-project/user-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mini-project/user-details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +150,7 @@
       <workItem from="1671816567383" duration="5399000" />
       <workItem from="1671851641397" duration="2418000" />
       <workItem from="1671854261197" duration="185000" />
-      <workItem from="1671854567260" duration="1483000" />
+      <workItem from="1671854567260" duration="11986000" />
     </task>
     <task id="LOCAL-00001" summary="add lesson 1">
       <created>1667251275752</created>
@@ -323,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671855810685</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add mini project">
+      <created>1671856107687</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1671856107687</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

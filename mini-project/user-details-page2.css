@@ -1,7 +1,14 @@
+.title {
+    padding-left: 45%;
+}
+
 .container {
     background: #aeecd7;
     border: #122d3f solid 2px;
     border-radius: 5px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 15px;
 }
 
 .buttonInfo{
@@ -13,8 +20,8 @@
     margin-left: 350px;
     display: flex;
     flex-wrap: wrap;
-    width: 900px;
-    height: 500px;
+    width: 800px;
+    height: 450px;
     justify-content: space-between;
     align-items: center;
 }
@@ -22,12 +29,15 @@
 .postContainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 150px;
     height: 200px;
+    box-sizing: border-box;
     background: lightblue;
     border: #122d3f solid 1px;
     border-radius: 5px;
     box-shadow: #d7cccc 5px 5px 15px 5px;
+    padding: 15px;
 }
 
 .postContainer:hover {

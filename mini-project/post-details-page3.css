@@ -1,19 +1,33 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .postInfo {
+    box-sizing: border-box;
+    padding: 15px;
     border-radius: 5px;
     background: lightblue;
     border: #122d3f solid 1px;
     box-shadow: #d7cccc 5px 5px 15px 5px;
 }
-
+.boxComments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .listBox {
     display: flex;
     flex-wrap: wrap;
-    width: 1150px;
-    justify-content: space-evenly;
+    width: 1000px;
+    justify-content: space-between;
 }
 
 .innerBox{
     width: 180px;
+    box-sizing: border-box;
+    padding: 15px;
     background: darkseagreen;
     border: #122d3f solid 1px;
     border-radius: 5px;
