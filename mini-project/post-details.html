@@ -7,79 +7,8 @@
 </head>
 <body>
 <h1>Title</h1>
-<script>
 
 
-
-    let  apiURL = 'https://jsonplaceholder.typicode.com/posts/';
-
-    let url = new URL (location.href);
-
-    let post = url.searchParams.get("post");
-
-
-    fetch(apiURL + post)
-
-        .then(value => value.json())
-        .then(value => {
-                console.log(value);
-                let divPost = document.createElement('div');
-                divPost.classList.add('postInfo')
-            for (let post in value) {
-                let pInfo = document.createElement('p');
-                pInfo.innerText = `${post} -- ${value[post]}`;
-                divPost.append(pInfo)
-            }
-                document.body.append(divPost);
-        })
-
-
-
-    // 8 Нижчє інформаці про пост, вивести всі коментарі поточного поста (ендпоінт  - https://jsonplaceholder.typicode.com/posts/POST_ID/comments)
-
-
-
-
-
-       // let apiURL2 = 'https://jsonplaceholder.typicode.com/comments/'
-       //
-       // let url2 = new URL(location.href);
-       //
-       //  let comment = url2.searchParams.get("comment");
-
-
-    // let btn2 = document.createElement('button');
-    // btn2.innerText = `all comments`
-    // btn2.onclick = function () {
-    //     this.disabled = true;
-
-        // fetch(apiURL + post.id +'/comments')
-        //     .then( value => value.json())
-        //     .then(value => {
-        //         console.log(value);
-        //         let comments = document.createElement('ul')
-        //         for (let comment of value) {
-        //
-        //             let commentLi = document.createElement('li');
-        //             commentLi.innerText = comment.body;
-        //             comment.append(commentLi);
-        //         }
-        //         document.body.append(comments);
-        //     });
-
-    //document.body.append(btn2);
-
-   let comments = document.createElement('ol')
-    fetch(`https://jsonplaceholder.typicode.com/post/${post.id}/comments`)
-        .then(value => value.json())
-        .then(value => {
-            console.log(value)
-            for (let commentItem of value) {
-                let commentLi = document.createElement('li');
-                commentLi.innerText = commentItem.body;
-                comments.append(commentLi);
-            }
-        })
-</script>
+<script src="post-details.js"></script>
 </body>
 </html>

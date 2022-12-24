@@ -6,16 +6,20 @@
 .user {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     background: #9ee5ee;
     width: 200px;
     height: 100px;
     margin: 10px;
     margin-left: calc(25% - 100px);
     margin-right: calc(25% - 100px);
-    align-items: center;
-    justify-content: center;
+    box-sizing: border-box;
+    border: #122d3f solid 1px;
+    border-radius: 5px;
+    box-shadow: #d7cccc 5px 5px 15px 5px;
 }
-
+.user:hover {background: #aeecd7}
 .info {
     display: flex;
     flex-wrap: wrap;

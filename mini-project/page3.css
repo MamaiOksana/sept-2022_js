@@ -1,4 +1,21 @@
 .postInfo {
+    border-radius: 5px;
     background: lightblue;
     border: #122d3f solid 1px;
+    box-shadow: #d7cccc 5px 5px 15px 5px;
+}
+
+.listBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1150px;
+    justify-content: space-evenly;
+}
+
+.innerBox{
+    width: 180px;
+    background: darkseagreen;
+    border: #122d3f solid 1px;
+    border-radius: 5px;
+    box-shadow: #d7cccc 5px 5px 15px 5px;
 }
