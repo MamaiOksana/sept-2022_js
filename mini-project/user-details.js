@@ -45,8 +45,6 @@ fetch(apiURL + id)
         }
 
 
-
-
         let btn = document.createElement('button');
         btn.classList.add('buttonInfo')
         btn.innerText = `post of current user`

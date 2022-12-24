@@ -19,7 +19,10 @@
     border-radius: 5px;
     box-shadow: #d7cccc 5px 5px 15px 5px;
 }
-.user:hover {background: #aeecd7}
+.user:hover {
+    background: #aeecd7;
+}
+
 .info {
     display: flex;
     flex-wrap: wrap;

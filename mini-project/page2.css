@@ -29,12 +29,13 @@
     border-radius: 5px;
     box-shadow: #d7cccc 5px 5px 15px 5px;
 }
-.postContainer:hover {background: #a6e7df
+
+.postContainer:hover {
+    background: #a6e7df;
 }
 
 .infoPost {
     align-items: center;
     justify-content: center;
     width: 150px;
-
 }
